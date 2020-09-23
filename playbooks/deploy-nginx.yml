@@ -1,0 +1,6 @@
+---
+- hosts: all
+  collections:
+    - nginxinc.nginx_core
+  roles:
+    - role: nginx

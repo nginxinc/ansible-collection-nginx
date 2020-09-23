@@ -1,0 +1,137 @@
+---
+- hosts: all
+  collections:
+    - nginxinc.nginx_core
+  roles:
+    - role: nginx
+      vars:
+        nginx_type: plus
+        nginx_license:
+          certificate: <path/to/certificate>
+          key: <path/to/key>
+        nginx_remove_license: false
+    - role: nginx_app_protect
+      vars:
+        nginx_app_protect_setup_license: false
+        nginx_app_protect_remove_license: false
+        nginx_app_protect_install_signatures: true
+        nginx_app_protect_install_threat_campaigns: true
+        nginx_app_protect_configure: true
+        nginx_app_protect_security_policy_template_enable: true
+        nginx_app_protect_security_policy_enforcement_mode: blocking
+        nginx_app_protect_log_policy_template_enable: true
+        nginx_app_protect_log_policy_filter_request_type: all
+        nginx_app_protect_conf_template_enable: false
+    - role: nginx_config
+      vars:
+        nginx_config_modules:
+          - modules/ngx_http_app_protect_module.so
+        nginx_config_http_template_enable: true
+        nginx_config_http_template:
+          app:
+            template_file: http/default.conf.j2
+            conf_file_name: default.conf
+            conf_file_location: /etc/nginx/conf.d/
+            servers:
+              main:
+                app_protect:
+                  enable: true
+                  policy_file: /etc/nginx/app-protect-security-policy.json
+                  security_log_enable: true
+                  security_log:
+                    path: /etc/nginx/app-protect-log-policy.json
+                    dest: /var/log/app_protect/security.log
+                listen:
+                  listen_localhost:
+                    port: 80
+                server_name: localhost
+                access_log:
+                  - name: main
+                    location: /var/log/nginx/access.log
+                reverse_proxy:
+                  locations:
+                    main:
+                      location: /
+                      proxy_pass: http://upstr/
+                      proxy_set_header:
+                        header_host:
+                          name: Host
+                          value: $host
+              server_one:
+                listen:
+                  listen_server_one:
+                    port: 8081
+                server_name: localhost
+                access_log:
+                  - name: main
+                    location: /var/log/nginx/access.log
+                web_server:
+                  locations:
+                    server_one:
+                      location: /
+                      html_file_location: /usr/share/nginx/html
+                      html_file_name: server_one.html
+                sub_filter:
+                  once: false
+                  sub_filters:
+                    - "'server_hostname' '$hostname'"
+                    - "'server_address' '$server_addr:$server_port'"
+                    - "'server_url' '$request_uri'"
+                    - "'remote_addr' '$remote_addr:$remote_port'"
+                    - "'server_date' '$time_local'"
+                    - "'client_browser' '$http_user_agent'"
+                    - "'request_id' '$request_id'"
+                    - "'nginx_version' '$nginx_version'"
+                    - "'document_root' '$document_root'"
+                    - "'proxied_for_ip' '$http_x_forwarded_for'"
+              server_two:
+                listen:
+                  listen_server_two:
+                    port: 8082
+                server_name: localhost
+                access_log:
+                  - name: main
+                    location: /var/log/nginx/access.log
+                web_server:
+                  locations:
+                    server_two:
+                      location: /
+                      html_file_location: /usr/share/nginx/html
+                      html_file_name: server_two.html
+                sub_filter:
+                  once: false
+                  sub_filters:
+                    - "'server_hostname' '$hostname'"
+                    - "'server_address' '$server_addr:$server_port'"
+                    - "'server_url' '$request_uri'"
+                    - "'remote_addr' '$remote_addr:$remote_port'"
+                    - "'server_date' '$time_local'"
+                    - "'client_browser' '$http_user_agent'"
+                    - "'request_id' '$request_id'"
+                    - "'nginx_version' '$nginx_version'"
+                    - "'document_root' '$document_root'"
+                    - "'proxied_for_ip' '$http_x_forwarded_for'"
+            upstreams:
+              main:
+                name: upstr
+                lb_method: least_conn
+                servers:
+                  server_one:
+                    address: 0.0.0.0
+                    port: 8081
+                  server_two:
+                    address: 0.0.0.0
+                    port: 8082
+
+        nginx_config_html_demo_template_enable: true
+        nginx_config_html_demo_template:
+          server_one:
+            template_file: www/index.html.j2
+            html_file_name: server_one.html
+            html_file_location: /usr/share/nginx/html
+            web_server_name: Ansible NGINX collection - Server one
+          server_two:
+            template_file: www/index.html.j2
+            html_file_name: server_two.html
+            html_file_location: /usr/share/nginx/html
+            web_server_name: Ansible NGINX collection - Server two
