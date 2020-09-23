@@ -1,0 +1,9 @@
+[submodule "roles/nginx"]
+	path = roles/nginx
+	url = https://github.com/nginxinc/ansible-role-nginx
+[submodule "roles/nginx_config"]
+	path = roles/nginx_config
+	url = https://github.com/nginxinc/ansible-role-nginx-config
+[submodule "roles/nginx_app_protect"]
+	path = roles/nginx_app_protect
+	url = https://github.com/nginxinc/ansible-role-nginx-app-protect
