@@ -12,7 +12,7 @@ The Ansible NGINX collection includes the following roles:
 
 |Name|Description|Version|
 |----|-----------|-------|
-|[nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx)|Install NGINX|0.17.1|
+|[nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx)|Install NGINX|0.17.2|
 |[nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config)|Configure NGINX|0.2.0|
 |[nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect)|Install and configure NGINX App Protect|0.3.1|
 

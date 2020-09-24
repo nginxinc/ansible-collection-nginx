@@ -13,5 +13,8 @@ Thumbs.db
 # Ansible specific
 *.retry
 
+# Ansible collection build artifacts
+*.tar.gz
+
 # Python specific
 __pycache__
