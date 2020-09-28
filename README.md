@@ -36,7 +36,7 @@ You can also include the collection in a `requirements.yml` file and install it 
 ---
 collections:
   - name: nginxinc.nginx_core
-    version: 0.1.1
+    version: 0.1.3
 ```
 
 **Git**
