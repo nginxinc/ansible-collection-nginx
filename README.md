@@ -11,13 +11,13 @@ The Ansible NGINX collection includes a variety of NGINX Ansible roles to help a
 
 ## Included Content
 
-The Ansible NGINX collection includes the following roles:
+The current stable release (`0.2.0`) of the Ansible NGINX collection includes the following roles:
 
 |Name|Description|Version|
 |----|-----------|-------|
-|[nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx)|Install NGINX|0.17.2|
-|[nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config)|Configure NGINX|0.2.0|
-|[nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect)|Install and configure NGINX App Protect|0.3.1|
+|[nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx)|Install NGINX|0.18.1|
+|[nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config)|Configure NGINX|0.3.0|
+|[nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect)|Install and configure NGINX App Protect|0.4.1|
 
 ## Requirements
 
@@ -37,7 +37,7 @@ You can also include the collection in a `requirements.yml` file and install it 
 ---
 collections:
   - name: nginxinc.nginx_core
-    version: 0.1.3
+    version: 0.2.0
 ```
 
 ### Git
@@ -62,11 +62,7 @@ Sample playbooks for each use case covered by this collection can be found in th
 
 Currently, all the NGINX roles included in this collection (found in the [`roles/`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/roles/) folder) are Git submodules, and work on the roles themselves should take place in the corresponding upstream role repository.
 
-To update the roles included in this collection to their latest version, run:
-
-```
-git submodule update --recursive --remote
-```
+To update the roles included in this collection to their latest version, run `git submodule update --recursive --remote`.
 
 ## Author Information
 

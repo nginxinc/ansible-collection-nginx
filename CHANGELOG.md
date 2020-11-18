@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## 0.1.4 (Unreleased)
+## 0.2.0 (November 18, 2020)
 
-Add survey to README.
+Update `nginx` role to `0.18.1`, `nginx_config` role to `0.3.0`, and `nginx_app_protect` role to `0.4.1`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release.
 
 ## 0.1.3 (September 24, 2020)
 
@@ -18,4 +18,4 @@ Add example playbooks covering a wide range of use cases.
 
 ## 0.1.0 (September 23, 2020)
 
-Initial release of the Ansible NGINX collection.
+Initial release of the Ansible NGINX collection. It includes version `0.17.1` of the `nginx` role, version `0.2.0` of the `nginx_config` role, and version `0.3.1` of the `nginx_app_protect` role.
