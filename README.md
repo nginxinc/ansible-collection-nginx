@@ -11,13 +11,13 @@ The Ansible NGINX collection includes a variety of NGINX Ansible roles to help a
 
 ## Included Content
 
-The current stable release (`0.2.0`) of the Ansible NGINX collection includes the following roles:
+The current stable release (`0.3.0`) of the Ansible NGINX collection includes the following roles:
 
 |Name|Description|Version|
 |----|-----------|-------|
-|[nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx)|Install NGINX|0.18.1|
-|[nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config)|Configure NGINX|0.3.0|
-|[nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect)|Install and configure NGINX App Protect|0.4.1|
+|[nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx)|Install NGINX|0.19.1|
+|[nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config)|Configure NGINX|0.3.2|
+|[nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect)|Install and configure NGINX App Protect|0.4.2|
 
 ## Requirements
 
@@ -37,7 +37,7 @@ You can also include the collection in a `requirements.yml` file and install it 
 ---
 collections:
   - name: nginxinc.nginx_core
-    version: 0.2.0
+    version: 0.3.0
 ```
 
 ### Git
@@ -64,8 +64,18 @@ Currently, all the NGINX roles included in this collection (found in the [`roles
 
 To update the roles included in this collection to their latest version, run `git submodule update --recursive --remote`.
 
+## Other NGINX Ansible Collections and Roles
+
+You can find the Ansible NGINX Controller collection of roles to install and configure NGINX Controller [here](https://github.com/nginxinc/ansible-collection-nginx_controller).
+
+You can find the Ansible NGINX Unit role to install NGINX Unit [here](https://github.com/nginxinc/ansible-role-nginx-unit).
+
+## License
+
+[Apache License, Version 2.0](https://github.com/nginxinc/ansible-collection-nginx/blob/main/LICENSE)
+
 ## Author Information
 
 [Alessandro Fael Garcia](https://github.com/alessfg)
 
-&copy; [F5 Networks, Inc.](https://www.f5.com/) 2020
+&copy; [F5 Networks, Inc.](https://www.f5.com/) 2020 - 2021

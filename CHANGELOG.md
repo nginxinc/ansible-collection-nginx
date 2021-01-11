@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.3.0 (January 11, 2021)
+
+Update `nginx` role to `0.19.1`, `nginx_config` role to `0.3.2`, and `nginx_app_protect` role to `0.4.2`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release.
+
 ## 0.2.0 (November 18, 2020)
 
 Update `nginx` role to `0.18.1`, `nginx_config` role to `0.3.0`, and `nginx_app_protect` role to `0.4.1`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release.

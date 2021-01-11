@@ -5,16 +5,20 @@
 *~
 \#*
 
-# OS Specific
+# OS Specific #
+###############
 Thumbs.db
 .DS_Store
 .vscode
 
-# Ansible specific
+# Ansible specific #
+####################
 *.retry
 
-# Ansible collection build artifacts
+# Ansible collection build artifacts #
+######################################
 *.tar.gz
 
-# Python specific
+# Python specific #
+###################
 __pycache__
