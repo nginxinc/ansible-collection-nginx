@@ -2,8 +2,10 @@
 - hosts: all
   collections:
     - nginxinc.nginx_core
-  roles:
-    - role: nginx
+  tasks:
+    - name: Install NGINX Plus
+      include_role:
+        name: nginx
       vars:
         nginx_type: plus
         nginx_license:

@@ -2,5 +2,7 @@
 - hosts: all
   collections:
     - nginxinc.nginx_core
-  roles:
-    - role: nginx
+  tasks:
+    - name: Install NGINX
+      include_role:
+        name: nginx

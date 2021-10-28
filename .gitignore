@@ -13,12 +13,17 @@ Thumbs.db
 
 # Ansible specific #
 ####################
+.cache
 *.retry
 
-# Ansible collection build artifacts #
-######################################
-*.tar.gz
+# Ansible collection specific #
+###############################
+nginxinc-nginx_core-*.tar.gz
 
 # Python specific #
 ###################
 __pycache__
+
+# Logs #
+########
+*.log
