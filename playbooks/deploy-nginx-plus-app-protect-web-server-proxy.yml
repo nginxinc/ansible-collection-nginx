@@ -139,10 +139,8 @@
         nginx_config_html_demo_template_enable: true
         nginx_config_html_demo_template:
           - template_file: www/index.html.j2
-            html_file_name: server_one.html
-            html_file_location: /usr/share/nginx/html
+            deployment_location: /usr/share/nginx/html/server_one.html
             web_server_name: Ansible NGINX collection - Server one
           - template_file: www/index.html.j2
-            html_file_name: server_two.html
-            html_file_location: /usr/share/nginx/html
+            deployment_location: /usr/share/nginx/html/server_two.html
             web_server_name: Ansible NGINX collection - Server two
