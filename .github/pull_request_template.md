@@ -6,5 +6,5 @@ Describe the use case and detail of the change. If this PR addresses an issue on
 
 Before creating a PR, run through this checklist and mark each as complete.
 
-- [ ] I have read the [CONTRIBUTING](https://github.com/nginxinc/ansible-collection-nginx/blob/main/CONTRIBUTING.md) document
-- [ ] I have updated any relevant documentation (`README.md` and `CHANGELOG.md`)
+- [ ] I have read the [`CONTRIBUTING`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/CONTRIBUTING.md) document
+- [ ] I have updated any relevant documentation ([`README`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/README.md) and [`CHANGELOG`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/CHANGELOG.md))

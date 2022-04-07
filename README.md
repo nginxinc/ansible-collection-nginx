@@ -11,13 +11,13 @@ The Ansible NGINX collection includes a variety of NGINX Ansible roles to help a
 
 ## Included Content
 
-The current stable release (`0.5.0`) of the Ansible NGINX collection includes the following roles:
+The current stable release (`0.6.0`) of the Ansible NGINX collection includes the following roles:
 
 | Name | Description | Version |
 | ---- | ----------- | ------- |
-| [nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx) | Install NGINX | 0.23.0 |
-| [nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config) | Configure NGINX | 0.5.0 |
-| [nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect) | Install and configure NGINX App Protect | 0.7.1 |
+| [nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx) | Install NGINX | 0.23.1 |
+| [nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config) | Configure NGINX | 0.5.1 |
+| [nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect) | Install and configure NGINX App Protect | 0.8.0 |
 
 ## Requirements
 
@@ -38,11 +38,11 @@ If you wish to install NGINX App Protect WAF or NGINX App Protect DoS using this
     ---
     collections:
       - name: community.general
-        version: 4.4.0
+        version: 4.6.0
       - name: ansible.posix
         version: 1.3.0
       - name: community.docker  # Only required if you plan to use Molecule (see below)
-        version: 2.1.1
+        version: 2.3.0
     ```
 
     **Note:** You can alternatively install the Ansible community distribution (what is known as the "old" Ansible) if you don't want to manage individual collections.
@@ -81,7 +81,7 @@ You can also include the collection in a `requirements.yml` file and install it 
 ---
 collections:
   - name: nginxinc.nginx_core
-    version: 0.5.0
+    version: 0.6.0
 ```
 
 ### Git

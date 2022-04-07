@@ -4,7 +4,7 @@
     - nginxinc.nginx_core
   tasks:
     - name: Install NGINX Plus
-      include_role:
+      ansible.builtin.include_role:
         name: nginx
       vars:
         nginx_type: plus

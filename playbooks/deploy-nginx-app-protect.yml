@@ -4,7 +4,7 @@
     - nginxinc.nginx_core
   tasks:
     - name: Install NGINX App Protect
-      include_role:
+      ansible.builtin.include_role:
         name: nginx_app_protect
       vars:
         nginx_app_protect_license:

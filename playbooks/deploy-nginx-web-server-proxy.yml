@@ -4,11 +4,11 @@
     - nginxinc.nginx_core
   tasks:
     - name: Install NGINX
-      include_role:
+      ansible.builtin.include_role:
         name: nginx
 
     - name: Configure NGINX
-      include_role:
+      ansible.builtin.include_role:
         name: nginx_config
       vars:
         nginx_config_http_template_enable: true
