@@ -98,7 +98,7 @@ Sample playbooks for each use case covered by this collection can be found in th
 | **[`deploy-nginx-plus.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-plus.yml)** | Install NGINX Plus |
 | **[`deploy-nginx-app-protect.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-app-protect.yml)** | Install NGINX App Protect WAF/DoS |
 | **[`deploy-nginx-plus-app-protect.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-plus-app-protect.yml)** | Install NGINX Plus and NGINX App Protect WAF |
-| **[`deploy-nginx-web-server.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-web-server.yml)**  Install NGINX and configure a simple web server |
+| **[`deploy-nginx-web-server.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-web-server.yml)** | Install NGINX and configure a simple web server |
 | **[`deploy-nginx-web-server-proxy.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-web-server-proxy.yml)** | Install NGINX and configure a simple reverse proxy in front of two web servers |
 | **[`deploy-nginx-plus-app-protect-web-server-proxy.yml`](https://github.com/nginxinc/ansible-collection-nginx/blob/main/playbooks/deploy-nginx-plus-app-protect-web-server-proxy.yml)** | Install NGINX Plus and NGINX App Protect and configure a simple reverse proxy in front of two web servers protected by NGINX App Protect WAF/DoS |
 
