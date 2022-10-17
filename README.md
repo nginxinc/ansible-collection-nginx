@@ -11,13 +11,13 @@ The Ansible NGINX collection includes a variety of NGINX Ansible roles to help a
 
 ## Included Content
 
-The current stable release (`0.6.0`) of the Ansible NGINX collection includes the following roles:
+The current stable release (`0.7.0`) of the Ansible NGINX collection includes the following roles:
 
 | Name | Description | Version |
 | ---- | ----------- | ------- |
-| [nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx) | Install NGINX | 0.23.1 |
-| [nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config) | Configure NGINX | 0.5.1 |
-| [nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect) | Install and configure NGINX App Protect | 0.8.0 |
+| [nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx) | Install NGINX | 0.23.2 |
+| [nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config) | Configure NGINX | 0.5.2 |
+| [nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect) | Install and configure NGINX App Protect | 0.8.1 |
 
 ## Requirements
 
@@ -34,15 +34,17 @@ If you wish to install NGINX App Protect WAF or NGINX App Protect DoS using this
 * This collection is developed and tested with [maintained](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html) versions of Ansible core (above `2.12`).
 * When using Ansible core, you will also need to install the following collections:
 
-    ```yaml
+     ```yaml
     ---
     collections:
-      - name: community.general
-        version: 4.6.0
       - name: ansible.posix
-        version: 1.3.0
+        version: 1.4.0
+      - name: community.crypto
+        version: 2.5.0
+      - name: community.general
+        version: 5.5.0
       - name: community.docker  # Only required if you plan to use Molecule (see below)
-        version: 2.3.0
+        version: 3.1.0
     ```
 
     **Note:** You can alternatively install the Ansible community distribution (what is known as the "old" Ansible) if you don't want to manage individual collections.
@@ -81,7 +83,7 @@ You can also include the collection in a `requirements.yml` file and install it 
 ---
 collections:
   - name: nginxinc.nginx_core
-    version: 0.6.0
+    version: 0.7.0
 ```
 
 ### Git
@@ -110,8 +112,6 @@ To update the roles included in this collection to their latest version, run `gi
 
 ## Other NGINX Ansible Collections and Roles
 
-You can find the Ansible NGINX Controller collection of roles to install and configure NGINX Controller [here](https://github.com/nginxinc/ansible-collection-nginx_controller).
-
 You can find the Ansible NGINX Unit role to install NGINX Unit [here](https://github.com/nginxinc/ansible-role-nginx-unit).
 
 ## License
@@ -122,4 +122,4 @@ You can find the Ansible NGINX Unit role to install NGINX Unit [here](https://gi
 
 [Alessandro Fael Garcia](https://github.com/alessfg)
 
-&copy; [F5 Networks, Inc.](https://www.f5.com/) 2020 - 2022
+&copy; [F5, Inc.](https://www.f5.com/) 2020 - 2022
