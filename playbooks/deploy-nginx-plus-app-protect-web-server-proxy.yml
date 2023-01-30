@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Install NGINX Plus and NGINX App Protect and configure a simple reverse proxy in front of two web servers protected by NGINX App Protect WAF/DoS
+  hosts: all
   collections:
     - nginxinc.nginx_core
   tasks:

@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Install NGINX and configure a simple reverse proxy in front of two web servers
+  hosts: all
   collections:
     - nginxinc.nginx_core
   tasks:

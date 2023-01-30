@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Install NGINX and configure a simple web server
+  hosts: all
   collections:
     - nginxinc.nginx_core
   tasks:

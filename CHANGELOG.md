@@ -1,36 +1,44 @@
 # CHANGELOG
 
+## 0.8.0 (January 29, 2023)
+
+Update `nginx` role to `0.24.0`, `nginx_config` role to `0.6.0`, and `nginx_app_protect` role to `0.9.0`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release:
+
+- Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.24.0/CHANGELOG.md)
+- Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.6.0/CHANGELOG.md)
+- Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.9.0/CHANGELOG.md)
+
 ## 0.7.0 (October 17, 2022)
 
 Update `nginx` role to `0.23.2`, `nginx_config` role to `0.5.2`, and `nginx_app_protect` role to `0.8.1`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release:
 
-* Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.23.2/CHANGELOG.md)
-* Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.5.2/CHANGELOG.md)
-* Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.8.1/CHANGELOG.md)
+- Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.23.2/CHANGELOG.md)
+- Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.5.2/CHANGELOG.md)
+- Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.8.1/CHANGELOG.md)
 
 ## 0.6.0 (April 7, 2022)
 
 Update `nginx` role to `0.23.1`, `nginx_config` role to `0.5.1`, and `nginx_app_protect` role to `0.8.0`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release:
 
-* Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.23.1/CHANGELOG.md)
-* Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.5.1/CHANGELOG.md)
-* Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.8.0/CHANGELOG.md)
+- Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.23.1/CHANGELOG.md)
+- Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.5.1/CHANGELOG.md)
+- Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.8.0/CHANGELOG.md)
 
 ## 0.5.0 (February 17, 2022)
 
 Update `nginx` role to `0.23.0`, `nginx_config` role to `0.5.0`, and `nginx_app_protect` role to `0.7.1`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release:
 
-* Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.23.0/CHANGELOG.md)
-* Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.5.0/CHANGELOG.md)
-* Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.7.1/CHANGELOG.md)
+- Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.23.0/CHANGELOG.md)
+- Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.5.0/CHANGELOG.md)
+- Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.7.1/CHANGELOG.md)
 
 ## 0.4.0 (October 28, 2021)
 
 Update `nginx` role to `0.21.3`, `nginx_config` role to `0.4.2`, and `nginx_app_protect` role to `0.7.0`. Check each role's respective CHANGELOG to see what's changed since the latest NGINX collection release:
 
-* Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.21.3/CHANGELOG.md)
-* Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.4.2/CHANGELOG.md)
-* Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.7.0/CHANGELOG.md)
+- Ansible NGINX role's [changelog](https://github.com/nginxinc/ansible-role-nginx/blob/0.21.3/CHANGELOG.md)
+- Ansible NGINX config role's [changelog](https://github.com/nginxinc/ansible-role-nginx-config/blob/0.4.2/CHANGELOG.md)
+- Ansible NGINX App Protect role's [changelog](https://github.com/nginxinc/ansible-role-nginx-app-protect/blob/0.7.0/CHANGELOG.md)
 
 ## 0.3.0 (January 11, 2021)
 

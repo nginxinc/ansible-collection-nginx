@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Install NGINX Plus and NGINX App Protect WAF
+  hosts: all
   collections:
     - nginxinc.nginx_core
   tasks:
