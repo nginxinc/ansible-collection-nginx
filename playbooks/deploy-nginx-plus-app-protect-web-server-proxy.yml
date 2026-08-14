@@ -1,12 +1,10 @@
 ---
 - name: Install NGINX Plus and NGINX App Protect and configure a simple reverse proxy in front of two web servers protected by NGINX App Protect WAF/DoS
   hosts: all
-  collections:
-    - nginxinc.nginx_core
   tasks:
     - name: Install NGINX Plus
       ansible.builtin.include_role:
-        name: nginx
+        name: nginxinc.nginx_core.nginx
       vars:
         nginx_type: plus
         nginx_license:
@@ -16,7 +14,7 @@
 
     - name: Install NGINX App Protect WAF/DoS
       ansible.builtin.include_role:
-        name: nginx_app_protect
+        name: nginxinc.nginx_core.nginx_app_protect
       vars:
         nginx_app_protect_waf_enable: true
         nginx_app_protect_dos_enable: true
@@ -27,7 +25,7 @@
 
     - name: Configure NGINX
       ansible.builtin.include_role:
-        name: nginx_config
+        name: nginxinc.nginx_core.nginx_config
       vars:
         nginx_config_modules:
           - modules/ngx_http_app_protect_module.so

@@ -20,7 +20,7 @@ If you find a security vulnerability that affects Ansible directly, we encourage
 
 If you find a security vulnerability that affects the codebase, we encourage you to report it to the F5 Security Incident Response Team (F5 SIRT):
 
-- If you’re an F5 customer with an active support contract, please contact [F5 Technical Support](https://www.f5.com/services/support).
-- If you aren’t an F5 customer, please report any potential or current instances of security vulnerabilities to the F5 SIRT at <F5SIRT@f5.com>.
+- If you're an F5 customer with an active support contract, please contact [F5 Technical Support](https://www.f5.com/services/support).
+- If you aren't an F5 customer, please report any potential or current instances of security vulnerabilities to the F5 SIRT at <F5SIRT@f5.com>.
 
 For more information visit [https://www.f5.com/services/support/report-a-vulnerability](https://www.f5.com/services/support/report-a-vulnerability)

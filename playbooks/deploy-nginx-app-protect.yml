@@ -1,12 +1,10 @@
 ---
 - name: Install NGINX App Protect WAF/DoS
   hosts: all
-  collections:
-    - nginxinc.nginx_core
   tasks:
     - name: Install NGINX App Protect
       ansible.builtin.include_role:
-        name: nginx_app_protect
+        name: nginxinc.nginx_core.nginx_app_protect
       vars:
         nginx_app_protect_license:
           certificate: <path/to/certificate>
