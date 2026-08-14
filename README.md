@@ -31,7 +31,7 @@ If you wish to install NGINX App Protect WAF or NGINX App Protect DoS using this
 
 ### Ansible
 
-- This collection is developed and tested with [maintained](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html) versions of Ansible core (above `2.16`).
+- This collection is developed and tested with [maintained](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html) versions of Ansible core (`2.16` and later).
 - When using Ansible core, you will also need to install the following collections:
 
     ```yaml
