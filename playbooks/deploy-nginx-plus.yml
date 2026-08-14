@@ -1,12 +1,10 @@
 ---
 - name: Install NGINX Plus
   hosts: all
-  collections:
-    - nginxinc.nginx_core
   tasks:
     - name: Install NGINX Plus
       ansible.builtin.include_role:
-        name: nginx
+        name: nginxinc.nginx_core.nginx
       vars:
         nginx_type: plus
         nginx_license:

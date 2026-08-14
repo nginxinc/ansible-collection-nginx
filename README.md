@@ -11,13 +11,13 @@ The Ansible NGINX collection includes a variety of NGINX Ansible roles to help a
 
 ## Included Content
 
-The current stable release (`0.8.0`) of the Ansible NGINX collection includes the following roles:
+The current stable release (`0.9.0`) of the Ansible NGINX collection includes the following roles:
 
 | Name | Description | Version |
 | ---- | ----------- | ------- |
-| [nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx) | Install NGINX | 0.24.0 |
-| [nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config) | Configure NGINX | 0.6.0 |
-| [nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect) | Install and configure NGINX App Protect | 0.9.0 |
+| [nginxinc.nginx](https://github.com/nginxinc/ansible-role-nginx) | Install NGINX | 0.26.0 |
+| [nginxinc.nginx_config](https://github.com/nginxinc/ansible-role-nginx-config) | Configure NGINX | 0.7.1 |
+| [nginxinc.nginx_app_protect](https://github.com/nginxinc/ansible-role-nginx-app-protect) | Install and configure NGINX App Protect | 0.10.0 |
 
 ## Requirements
 
@@ -31,20 +31,20 @@ If you wish to install NGINX App Protect WAF or NGINX App Protect DoS using this
 
 ### Ansible
 
-- This collection is developed and tested with [maintained](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html) versions of Ansible core (above `2.12`).
+- This collection is developed and tested with [maintained](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html) versions of Ansible core (above `2.16`).
 - When using Ansible core, you will also need to install the following collections:
 
     ```yaml
     ---
     collections:
       - name: ansible.posix
-        version: 1.4.0
+        version: 2.2.2
       - name: community.crypto
-        version: 2.10.0
+        version: 2.26.9
       - name: community.general
-        version: 6.2.0
+        version: 11.4.9
       - name: community.docker # Only required if you plan to use Molecule (see below)
-        version: 3.4.0
+        version: 4.8.7
     ```
 
     **Note:** You can alternatively install the Ansible community distribution (what is known as the "old" Ansible) if you don't want to manage individual collections.
@@ -58,7 +58,7 @@ If you wish to install NGINX App Protect WAF or NGINX App Protect DoS using this
 
 ### Molecule (Optional)
 
-- Molecule is used to test the various roles included in the collection. The recommended version of Molecule to test this role is `4.x`.
+- Molecule is used to test the various roles included in the collection. The recommended version of Molecule to test this role is `25.x`.
 - At the moment, there are no end to end integration tests. You will need to change directory into each role's respective directory.
 - Instructions on how to install Molecule can be found in the [Molecule website](https://molecule.readthedocs.io/en/latest/installation.html). *You will also need to install the Molecule Docker driver.*
 - To run the NGINX Plus and/or NGINX App Protect Molecule tests, you must copy your corresponding license to the respective role's [`files/license`](https://github.com/nginxinc/ansible-role-nginx/blob/main/files/license/) folder.
@@ -93,7 +93,7 @@ You can also include the collection in a `requirements.yml` file:
 ---
 collections:
   - name: nginxinc.nginx_core
-    version: 0.8.0
+    version: 0.9.0
 ```
 
 And install the collection:
@@ -134,10 +134,6 @@ To update the roles included in this collection to their latest version, use:
 git submodule update --recursive --remote
 ```
 
-## Other NGINX Ansible Collections and Roles
-
-You can find the Ansible NGINX Unit role to install NGINX Unit [here](https://github.com/nginxinc/ansible-role-nginx-unit).
-
 ## License
 
 [Apache License, Version 2.0](https://github.com/nginxinc/ansible-collection-nginx/blob/main/LICENSE)
@@ -146,4 +142,4 @@ You can find the Ansible NGINX Unit role to install NGINX Unit [here](https://gi
 
 [Alessandro Fael Garcia](https://github.com/alessfg)
 
-&copy; [F5, Inc.](https://www.f5.com/) 2020 - 2023
+&copy; [F5, Inc.](https://www.f5.com/) 2020 - 2026

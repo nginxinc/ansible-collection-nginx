@@ -1,16 +1,14 @@
 ---
 - name: Install NGINX and configure a simple reverse proxy in front of two web servers
   hosts: all
-  collections:
-    - nginxinc.nginx_core
   tasks:
     - name: Install NGINX
       ansible.builtin.include_role:
-        name: nginx
+        name: nginxinc.nginx_core.nginx
 
     - name: Configure NGINX
       ansible.builtin.include_role:
-        name: nginx_config
+        name: nginxinc.nginx_core.nginx_config
       vars:
         nginx_config_http_template_enable: true
         nginx_config_http_template:

@@ -2,16 +2,16 @@
 namespace: nginxinc
 name: nginx_core
 description: Install and configure NGINX and NGINX App Protect using Ansible
-version: 0.8.0
+version: 0.9.0
 readme: README.md
 license_file: LICENSE
 authors:
   - Alessandro Fael Garcia <a.faelgarcia@f5.com>
 
 dependencies:
-  ansible.posix: ">=1.4.0"
-  community.crypto: ">=2.10.0"
-  community.general: ">=6.2.0"
+  ansible.posix: ">=2.2.2"
+  community.crypto: ">=2.26.9"
+  community.general: ">=11.4.9"
 
 repository: https://github.com/nginxinc/ansible-collection-nginx
 homepage: https://github.com/nginxinc/ansible-collection-nginx
